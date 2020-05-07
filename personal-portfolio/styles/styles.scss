@@ -1,0 +1,126 @@
+@media screen and (max-width: 600px) {
+    #navbar a {
+        float: none;
+        width: 60%;
+        font-size: 1em;
+        height: auto;
+    }
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nova Square', cursive;
+    color: #4371d4;
+    background-color: rgba($color: #1a1a1b, $alpha: 1);
+    color: #fff;
+}
+
+#navbar {
+    display: flex;
+    background-color: rgba($color: #4371d4, $alpha: 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    text-decoration: none;
+    text-align: right;
+    padding-top: 1.2em;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+#welcome-section {
+    text-align: center;
+    margin-top: 4em;
+    height: 100vh;
+    margin-top: 17em;
+}
+
+#welcome-section>a>img {
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    margin-top: 2em;
+    border: 15px solid #4371d4;
+}
+
+#welcome-section>h1>a:hover {
+    text-decoration: none;
+}
+
+#welcome-section>h3 {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.section-title {
+    text-align: center;
+    //margin-top: 3em;
+    font-size: 2em;
+}
+
+.projects {
+    display: flex;
+}
+
+.project-tile {
+    text-align: center;
+    margin-bottom: 2em;
+    background-color: rgba($color: #a3dfc8, $alpha: 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #4371d4;
+}
+
+.project-tile>p>a:hover {
+    text-decoration: none;
+}
+
+.project-img {
+    width: 50%;
+    height: auto;
+    border: #4371d4 solid 7px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+#contact {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 5em;
+}
+
+form {
+    background-color: black;
+    text-align: center;
+}
+
+.email {
+    margin-top: 0.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

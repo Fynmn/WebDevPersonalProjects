@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <div class="overlayy">
+
+        <div class="header">
+            <h1 id="title">Customer Order Survey Form</h1>
+            <p id="description">Please fill out the details below</p>
+        </div>
+
+        <form action="" id="survey-form" class="rounded-lg">
+            <div class="section">
+                <label for="name" id="name-label" class="label">Name</label>
+                <input class="input-text" type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="section">
+                <label for="email" id="email-label" class="label">Email</label>
+                <input class="input-text" type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="section">
+                <label for="number" id="number-label" class="label">Age (optional)</label>
+                <input class="input-text" type="number" id="number" min="18" max="90" placeholder="Enter your age">
+            </div>
+            <div class="section">
+                <label for="dropdown" id="dropdown-label" class="label carrier">Carrier </label>
+                <select name="carrier" id="dropdown">
+                <option value="Smart">Smart</option>
+                <option value="Globe">Globe</option>
+                <option value="Sun">Sun</option>
+                <option value="TNT">TNT</option>
+                <option value="TM">TM</option>
+            </select>
+            </div>
+            <div class="section">
+                <label for="manufacturer" class="label">Manufacturer</label>
+                <div class="radio-input">
+                    <input type="radio" id="Apple" name="manufacturer" value="Apple">
+                    <label for="Apple">Apple</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" id="Huawei" name="manufacturer" value="Huawei">
+                    <label for="Huawei">Huawei</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" id="Samsung" name="manufacturer" value="Samsung">
+                    <label for="Samsung">Samsung</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" id="Oppo" name="manufacturer" value="Oppo">
+                    <label for="Oppo">Oppo</label>
+                </div>
+                </select>
+            </div>
+            <div class="section">
+                <label for="device-issue" class="label">Device Issue</label>
+                <div class="checkbox-input">
+                    <input type="checkbox" id="device-issue1" value="broken-digitizer">
+                    <label for="device-issue1">Broken Digitize</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" id="device-issue2" value="broken-lcd">
+                    <label for="device-issue2">Broken LCD</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" id="device-issue3" value="broken-chargeport">
+                    <label for="device-issue3">Broken Chargeport</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" id="device-issue4" value="battery-replacement">
+                    <label for="device-issue4">Battery Replacement</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" id="device-issue5" value="other">
+                    <input type="text" for="device-issue5" class="other" placeholder="Other">
+                </div>
+            </div>
+            <div class="section">
+                <label for="" class="label">Errors and Symptoms Provided by Customer: </label>
+                <br>
+                <textarea class="textarea input-text" name="textarea" id="textarea" cols="50" rows="5" placeholder="ie. Does everything work?"></textarea>
+            </div>
+            <div>
+                <button class="btn-success" id="submit">
+                Submit
+            </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+//Variables
+$backgroundImage: url("/assets/background.jpg");
+body {
+    background: $backgroundImage;
+    background-size: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f3f3f3;
+}
+
+.overlayy {
+    background-color: rgba($color: #671ddd, $alpha: 0.5);
+}
+
+.header {
+    text-align: center;
+    text-shadow: 2px 2px 5px #0a0a0a;
+    color: #f3f3f3;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+form {
+    background-color: rgba($color: #2c1a47, $alpha: 0.8);
+    margin: auto;
+    width: 40%;
+    height: auto;
+    padding: 2em;
+}
+
+.input-text {
+    width: 100%;
+    border: 1px solid #481fdb;
+    height: 2.3em;
+    padding: 8px;
+}
+
+::placeholder {
+    font-size: 0.8em;
+}
+
+.section {
+    margin-bottom: 1.5em;
+    font-size: 0.8em;
+}
+
+.other {
+    width: 120px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+}
+
+#dropdown {
+    width: 100px;
+    height: 30px;
+}
+
+.carrier {
+    padding-right: 5px;
+}
